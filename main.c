@@ -1,6 +1,10 @@
-#include <stdio.h>
+#include "Texto.h"
 
 int main() {
-    printf("Hello, World!\n");
+    char *cadena = "Hola que tal me llamo Martin me tal llamo me Martin Hola";
+
+    Texto *texto = separarCadenaPorPalabras(cadena);
+    imprimirTexto(texto);
+
     return 0;
 }
